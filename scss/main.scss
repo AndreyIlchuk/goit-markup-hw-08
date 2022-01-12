@@ -1,3 +1,5 @@
+@import "./utils/mixins/respond";
+@import "./utils/variables/breakpoints";
 @import "./base/reset";
 @import "./base/base-styles";
 @import "./components/modal-submit";

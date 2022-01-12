@@ -17,9 +17,32 @@
     color: #2196f3;
   }
 }
-
+.mobile-menu {
+  margin: 10px 15px 10px 276px;
+  @include respond-to(tablet) {
+    display: none;
+  }
+}
+.button-menu {
+  display: inline-flex;
+  background-color: transparent;
+}
+.button-menu .icon-close {
+  display: none;
+}
+.button-menu.is-open .icon-close {
+  display: block;
+}
+.button-menu.is-open .icon-menu {
+  display: none;
+}
 .top-link {
-  display: flex;
+  @include respond-to(mobile) {
+    display: none;
+  }
+  @include respond-to(tablet) {
+    display: flex;
+  }
 }
 .link1:hover,
 .link1:focus {
@@ -63,9 +86,14 @@
 }
 
 .adress {
-  display: flex;
-  align-items: center;
-  justify-content: center;
+  @include respond-to(mobile) {
+    display: none;
+  }
+  @include respond-to(tablet) {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
 }
 .mail-icon {
   width: 16px;
