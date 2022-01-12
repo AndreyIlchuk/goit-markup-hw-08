@@ -1,6 +1,8 @@
 .header__nav {
   align-items: center;
   display: flex;
+  @include respond-to(mobile) {
+  }
 }
 .top-line-link {
   font-family: Raleway;
@@ -45,7 +47,7 @@
   }
 }
 .menu-container {
-  width: 100%;
+  display: flex;
 }
 .link1:hover,
 .link1:focus {
