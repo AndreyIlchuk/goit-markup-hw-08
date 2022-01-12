@@ -1,0 +1,9 @@
+{
+    "version": 3,
+    "mappings": "AAAA,AAAA,kBAAkB,AAAC,CACjB,OAAO,CAAE,MAAM,CAChB",
+    "sources": [
+        "../scss/layout/section/what-are-we-doing.scss"
+    ],
+    "names": [],
+    "file": "what-are-we-doing.min.css"
+}

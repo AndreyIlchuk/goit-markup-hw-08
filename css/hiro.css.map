@@ -1,0 +1,9 @@
+{
+    "version": 3,
+    "mappings": "AAAA,AAAA,KAAK,CAAC;EACJ,KAAK,EAAE,IAAI;EACX,UAAU,EAAE,qBAAqB;EACjC,OAAO,EAAE,eAAe;EACxB,mBAAmB,EAAE,MAAM;EAC3B,iBAAiB,EAAE,SAAS;EAC5B,gBAAgB,EAAE,iEAIf,EACD,oBAAoB;CACvB",
+    "sources": [
+        "../scss/layout/section/hiro.scss"
+    ],
+    "names": [],
+    "file": "hiro.css"
+}

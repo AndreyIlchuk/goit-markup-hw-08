@@ -1,0 +1,40 @@
+.group-peculiarities {
+  display: flex;
+}
+.feature:not(:last-child) {
+  margin-right: 30px;
+}
+.feature__antenna {
+  margin-bottom: 30px;
+}
+.feature__clock {
+  margin-bottom: 30px;
+}
+.feature__diagram {
+  margin-bottom: 30px;
+}
+.feature__astronaut {
+  margin-bottom: 30px;
+}
+.feature__title {
+  padding-bottom: 10px;
+  font-family: Roboto;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 14px;
+  line-height: 1.14;
+  letter-spacing: 0.03em;
+  text-transform: uppercase;
+  color: #212121;
+}
+
+.feature__text {
+  font-family: Roboto;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 14px;
+  line-height: 1.71;
+  letter-spacing: 0.03em;
+
+  color: #757575;
+}
