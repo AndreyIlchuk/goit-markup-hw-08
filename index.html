@@ -22,16 +22,19 @@
           <nav class="header__nav">
             <a class="top-line-link" href="https://github.com/"
               ><span class="span">Web</span>Studio</a>
-              <button class="button-menu is-open" type="button"
+              <button class="button-menu" type="button"
               data-menu-button>
                  <svg class="mobile-menu"
-                  width="24px" height="16px" 
+                  width="24px"
+                  height="16px" 
+                  aria-expanded="false"
                   aria-label="переключатель мобильного меню">
                 <use class="icon-menu" href=./img/symbol-defs.svg#icon-menu_24px></use>
                 <use class="icon-close" href=./img/symbol-defs.svg#icon-close_24px></use>
               </svg>
               </button>
-            <ul class="top-link">
+              <div class="menu-container">
+                <ul class="top-link">
               <li class="top-link__item">
                 <a class="top-link__nav activ" href="index.html">Студия</a>
              </li>
@@ -59,6 +62,8 @@
                 >
                </li>
              </ul>
+              </div>
+            
            </nav>
          </header>
        </div>
