@@ -9,16 +9,22 @@
     letter-spacing: 0.03em;
     color: #212121;
   }
-  margin-bottom: 50px;
-  font-family: Roboto;
-  font-style: normal;
-  font-weight: bold;
-  font-size: 36px;
-  line-height: 1.16;
-  letter-spacing: 0.03em;
-  color: #212121;
+  @include respond-to(desktop) {
+    margin-bottom: 50px;
+    font-family: Roboto;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 36px;
+    line-height: 1.16;
+    letter-spacing: 0.03em;
+    color: #212121;
+  }
 }
 .customers__client {
+  @include respond-to(mobile) {
+    display: flex;
+    flex-wrap: wrap;
+  }
   @include respond-to(desktop) {
     width: 1200px;
     margin: 0 auto;
@@ -27,9 +33,23 @@
   }
 }
 .client {
-  margin-right: 30px;
-  width: 170px;
-  height: 92px;
+  @include respond-to(mobile) {
+    &:nth-child(1) {
+      margin-right: 15px;
+    }
+    &:nth-child(3) {
+      margin-right: 15px;
+    }
+    &:nth-child(5) {
+      margin-right: 15px;
+    }
+    width: 137px;
+  }
+  @include respond-to(desktop) {
+    margin-right: 30px;
+    width: 170px;
+    height: 92px;
+  }
 }
 .customers__link {
   width: 100%;

@@ -1,20 +1,41 @@
 .footer-submit {
-  width: 200px;
-  height: 50px;
-  margin-top: 20px;
-  margin-left: 12px;
-  font-family: Roboto;
-  font-style: normal;
-  font-weight: bold;
-  font-size: 16px;
-  line-height: 1.87;
-  background: #188ce8;
-  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
-  border-radius: 4px;
-  letter-spacing: 0.06em;
-  color: #ffffff;
-  background-image: url(../img/icon-send.svg);
-  background-repeat: no-repeat;
-  background-position-y: center;
-  background-position-x: 150px;
+  @include respond-to(mobile) {
+    width: 200px;
+    height: 50px;
+    margin: 20px 60px;
+    font-family: Roboto;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 16px;
+    line-height: 1.87;
+    background: #188ce8;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+    border-radius: 4px;
+    letter-spacing: 0.06em;
+    color: #ffffff;
+    background-image: url(../img/icon-send.svg);
+    background-repeat: no-repeat;
+    background-position-y: center;
+    background-position-x: 150px;
+  }
+  @include respond-to(desktop) {
+    width: 200px;
+    height: 50px;
+    margin-top: 20px;
+    margin-left: 12px;
+    font-family: Roboto;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 16px;
+    line-height: 1.87;
+    background: #188ce8;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+    border-radius: 4px;
+    letter-spacing: 0.06em;
+    color: #ffffff;
+    background-image: url(../img/icon-send.svg);
+    background-repeat: no-repeat;
+    background-position-y: center;
+    background-position-x: 150px;
+  }
 }
