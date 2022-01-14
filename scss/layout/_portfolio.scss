@@ -1,10 +1,14 @@
 .portfolio-section {
-  padding: 94px 0;
+  @include respond-to(desktop) {
+    padding: 94px 0;
+  }
 }
 .portfolio-container {
-  width: 1200px;
-  margin: 0 auto;
-  padding-left: 15px;
+  @include respond-to(desktop) {
+    width: 1200px;
+    margin: 0 auto;
+    padding-left: 15px;
+  }
 }
 
 .filters-portfolio {

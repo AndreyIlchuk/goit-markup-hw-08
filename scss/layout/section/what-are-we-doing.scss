@@ -1,3 +1,8 @@
 .what-are-we-doing {
-  padding: 94px 0;
+  @include respond-to(mobile) {
+    display: none;
+  }
+  @include respond-to(tablet) {
+    padding: 94px 0;
+  }
 }

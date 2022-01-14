@@ -1,10 +1,17 @@
 .footer-title {
-  display: flex;
-  width: 100%;
-  padding: 60px 0;
-  background-color: #2f303a;
+  @include respond-to(mobile) {
+    background-color: #2f303a;
+  }
+  @include respond-to(desktop) {
+    display: flex;
+    width: 100%;
+    padding: 60px 0;
+    background-color: #2f303a;
+  }
 }
 .footer {
-  width: 1200px;
-  margin: 0 auto;
+  @include respond-to(desktop) {
+    width: 1200px;
+    margin: 0 auto;
+  }
 }

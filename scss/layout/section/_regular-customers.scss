@@ -1,7 +1,9 @@
 .regular-customers {
-  width: 100%;
-  margin: 0 auto;
-  text-align: center;
-  padding-top: 94px;
-  padding-bottom: 94px;
+  @include respond-to(desktop) {
+    width: 100%;
+    margin: 0 auto;
+    text-align: center;
+    padding-top: 94px;
+    padding-bottom: 94px;
+  }
 }

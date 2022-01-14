@@ -1,26 +1,45 @@
 .header__nav {
-  align-items: center;
-  display: flex;
   @include respond-to(mobile) {
+    padding-top: 16px;
+  }
+  @include respond-to(desktop) {
+    align-items: center;
+    display: flex;
   }
 }
 .top-line-link {
-  font-family: Raleway;
-  font-style: normal;
-  font-weight: bold;
-  font-size: 26px;
-  line-height: 1.19;
-  letter-spacing: 0.03em;
-  color: #000;
-  text-decoration: none;
-  transition: background-color, fill, color 250ms cubic-bezier(0.4, 0, 0.2, 1);
-  &:hover,
-  &:focus {
-    color: #2196f3;
+  @include respond-to(mobile) {
+    font-family: Raleway;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 24px;
+    line-height: 1.16;
+    letter-spacing: 0.03em;
+    color: #000;
+    text-decoration: none;
+    transition: background-color, fill, color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+    &:hover,
+    &:focus {
+      color: #2196f3;
+    }
+  }
+  @include respond-to(desktop) {
+    font-family: Raleway;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 26px;
+    line-height: 1.19;
+    letter-spacing: 0.03em;
+    color: #000;
+    text-decoration: none;
+    transition: background-color, fill, color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+    &:hover,
+    &:focus {
+      color: #2196f3;
+    }
   }
 }
 .mobile-menu {
-  margin: 10px 15px 10px 276px;
   @include respond-to(tablet) {
     display: none;
   }
@@ -38,17 +57,39 @@
 .button-menu.is-open .icon-menu {
   display: none;
 }
+
+.menu-container {
+  @include respond-to(desktop) {
+    display: flex;
+    align-items: center;
+  }
+  // display: none;
+  // position: absolute;
+  // display: flex;
+  // width: 480px;
+  // height: 796px;
+  // left: 0px;
+  // top: 0px;
+  // background: #ffffff;
+  // &is-open {
+  //   display: block;
+  // }
+}
 .top-link {
   @include respond-to(mobile) {
     display: none;
   }
   @include respond-to(tablet) {
     display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  @include respond-to(desktop) {
+    display: flex;
+    align-items: center;
   }
 }
-.menu-container {
-  display: flex;
-}
+
 .link1:hover,
 .link1:focus {
   color: #2196f3;
@@ -89,7 +130,6 @@
   background-color: #2196f3;
   border-radius: 2px;
 }
-
 .adress {
   @include respond-to(mobile) {
     display: none;
@@ -100,6 +140,7 @@
     justify-content: center;
   }
 }
+
 .mail-icon {
   width: 16px;
   height: 12px;

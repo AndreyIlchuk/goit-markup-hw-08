@@ -20,14 +20,24 @@
        <div class="container">
         <header class="header__top-line">
           <nav class="header__nav">
-            <a class="top-line-link" href="https://github.com/"
+             <a class="top-line-link" href="https://github.com/"
               ><span class="span">Web</span>Studio</a>
-              
+              <button class="button-menu" type="button"
+              data-menu-button>
+                 <svg class="mobile-menu"
+                  width="24px"
+                  height="16px" 
+                  aria-expanded="false"
+                  aria-label="переключатель мобильного меню">
+                <use class="icon-menu" href=./img/symbol-defs.svg#icon-menu_24px></use>
+                <use class="icon-close" href=./img/symbol-defs.svg#icon-close_24px></use>
+              </svg>
+              </button>
               <div class="menu-container">
-                <ul class="top-link">
+            <ul class="top-link">
               <li class="top-link__item">
                 <a class="top-link__nav activ" href="index.html">Студия</a>
-             </li>
+              </li>
               <li class="top-link__item">
                 <a class="top-link__nav" href="Portfolio/portfolio.html"
                   >Портфолио</a>
@@ -51,19 +61,9 @@
                  </svg> +38 096 111 11 11</a
                 >
                </li>
-             </ul>
+            </ul>
               </div>
-            <button class="button-menu" type="button"
-              data-menu-button>
-                 <svg class="mobile-menu"
-                  width="24px"
-                  height="16px" 
-                  aria-expanded="false"
-                  aria-label="переключатель мобильного меню">
-                <use class="icon-menu" href=./img/symbol-defs.svg#icon-menu_24px></use>
-                <use class="icon-close" href=./img/symbol-defs.svg#icon-close_24px></use>
-              </svg>
-              </button>
+            
            </nav>
          </header>
        </div>

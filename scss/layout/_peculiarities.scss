@@ -1,5 +1,13 @@
 .group-peculiarities {
-  display: flex;
+  @include respond-to(mobile) {
+    // flex-direction: column;
+  }
+  @include respond-to(tablet) {
+    display: flex;
+  }
+  @include respond-to(desktop) {
+    display: flex;
+  }
 }
 .feature:not(:last-child) {
   margin-right: 30px;
@@ -35,6 +43,5 @@
   font-size: 14px;
   line-height: 1.71;
   letter-spacing: 0.03em;
-
   color: #757575;
 }

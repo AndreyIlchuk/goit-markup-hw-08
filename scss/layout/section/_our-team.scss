@@ -1,6 +1,14 @@
 .our-team {
-  text-align: center;
-  padding-top: 94px;
-  padding-bottom: 94px;
-  background: #f5f4fa;
+  @include respond-to(mobile) {
+    text-align: center;
+    padding-top: 94px;
+    padding-bottom: 94px;
+    background: #f5f4fa;
+  }
+  @include respond-to(desktop) {
+    text-align: center;
+    padding-top: 94px;
+    padding-bottom: 94px;
+    background: #f5f4fa;
+  }
 }

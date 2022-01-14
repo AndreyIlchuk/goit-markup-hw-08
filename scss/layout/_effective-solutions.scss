@@ -1,18 +1,44 @@
 .title-container {
-  width: 1200px;
-  text-align: center;
-  margin: 0 auto;
+  @include respond-to(mobile) {
+    max-width: 320px;
+    margin: 0 auto;
+    text-align: center;
+    padding: 0 15px;
+  }
+  @include respond-to(tablet) {
+    max-width: 768px;
+    text-align: center;
+    margin: 0 auto;
+    padding: 0 15px;
+  }
+  @include respond-to(desktop) {
+    max-width: 1200px;
+    text-align: center;
+    margin: 0 auto;
+    padding: 0 15px;
+  }
 }
 .text {
-  margin: 0pt;
-  font-family: Roboto;
-  font-style: normal;
-  font-weight: 900;
-  font-size: 44px;
-  line-height: 1.36;
-  text-align: center;
-  letter-spacing: 0.06em;
-  text-transform: uppercase;
-
-  color: #ffffff;
+  @include respond-to(mobile) {
+    font-family: Roboto;
+    font-style: normal;
+    font-weight: 900;
+    font-size: 26px;
+    line-height: 1.61;
+    text-align: center;
+    letter-spacing: 0.06em;
+    text-transform: uppercase;
+    color: #ffffff;
+  }
+  @include respond-to(desktop) {
+    font-family: Roboto;
+    font-style: normal;
+    font-weight: 900;
+    font-size: 44px;
+    line-height: 1.36;
+    text-align: center;
+    letter-spacing: 0.06em;
+    text-transform: uppercase;
+    color: #ffffff;
+  }
 }

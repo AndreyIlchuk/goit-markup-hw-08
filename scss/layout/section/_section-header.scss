@@ -1,5 +1,7 @@
 .header {
-  width: 100%;
-  background: #ffffff;
-  padding: 25px 0;
+  @include respond-to(desktop) {
+    width: 100%;
+    background: #ffffff;
+    padding: 25px 0;
+  }
 }

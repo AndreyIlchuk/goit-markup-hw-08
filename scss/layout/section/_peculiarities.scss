@@ -1,3 +1,6 @@
 .peculiarities {
-  padding-top: 94px;
+  @include respond-to(desktop) {
+    padding-top: 94px;
+    padding-bottom: 94px;
+  }
 }
