@@ -84,10 +84,10 @@
 
 .social-list__icon {
   @include respond-to(mobile) {
-    display: block;
-    margin-bottom: 24px;
-    width: 44px;
-    height: 44px;
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    padding: 12px;
     -webkit-border-radius: 50%;
     border-radius: 50%;
     background: rgba(255, 255, 255, 0.1);
@@ -109,8 +109,7 @@
   }
   @include respond-to(desktop) {
     display: block;
-    width: 44px;
-    height: 44px;
+    padding: 12px;
     -webkit-border-radius: 50%;
     border-radius: 50%;
     background: rgba(255, 255, 255, 0.1);
@@ -133,6 +132,5 @@
 }
 
 .team-icon {
-  margin-top: 12px;
   fill: #afb1b8;
 }

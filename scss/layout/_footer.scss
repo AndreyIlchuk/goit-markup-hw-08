@@ -104,13 +104,9 @@
 }
 .icon {
   @include respond-to(mobile) {
-    margin-top: 12px;
-    margin-left: 0px;
     fill: var(--accent-color);
   }
   @include respond-to(desktop) {
-    margin-top: 12px;
-    margin-left: 12px;
     fill: var(--accent-color);
   }
 }
