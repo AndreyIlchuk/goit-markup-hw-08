@@ -1,8 +1,8 @@
-// .section-header-portfolio {
-//   @include respond-to(desktop) {
-//     width: 100%;
-//     background: #ffffff;
-//     padding: 25px 0;
-//     border: 1px solid #ececec;
-//   }
-// }
+.section-header-portfolio {
+  @include respond-to(desktop) {
+    width: 100%;
+    background: #ffffff;
+    padding: 25px 0;
+    border: 1px solid #ececec;
+  }
+}

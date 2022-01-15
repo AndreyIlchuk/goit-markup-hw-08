@@ -1,5 +1,6 @@
 .footer-container {
-  @media (max-width: 480) {
+  @media (max-width: 480px) {
+    text-align: center;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -102,9 +103,16 @@
   color: #ffffff;
 }
 .icon {
-  margin-top: 12px;
-  margin-left: 12px;
-  fill: var(--accent-color);
+  @include respond-to(mobile) {
+    margin-top: 12px;
+    margin-left: 0px;
+    fill: var(--accent-color);
+  }
+  @include respond-to(desktop) {
+    margin-top: 12px;
+    margin-left: 12px;
+    fill: var(--accent-color);
+  }
 }
 .footer-email {
   @include respond-to(desktop) {
