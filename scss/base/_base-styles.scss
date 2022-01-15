@@ -14,7 +14,7 @@
     box-sizing: border-box;
   }
   @include respond-to(desktop) {
-    width: 1280px;
+    width: 1200px;
     margin: 0 auto;
     padding-left: 15px;
     padding-right: 15px;

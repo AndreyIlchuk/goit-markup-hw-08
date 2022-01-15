@@ -1,7 +1,10 @@
 .footer-container {
+  @media (max-width: 480) {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
   @include respond-to(desktop) {
-    padding-left: 15px;
-    padding-right: 15px;
     display: flex;
     align-items: baseline;
   }
