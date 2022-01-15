@@ -1,6 +1,7 @@
 .header__nav {
   @include respond-to(mobile) {
     padding-top: 16px;
+    padding-bottom: 16px;
   }
   @include respond-to(desktop) {
     padding: 0;

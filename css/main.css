@@ -475,6 +475,7 @@ a {
 @media screen and (min-width: 319px) {
   .header__nav {
     padding-top: 16px;
+    padding-bottom: 16px;
   }
 }
 
