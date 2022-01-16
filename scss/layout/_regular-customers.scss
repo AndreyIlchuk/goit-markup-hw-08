@@ -1,6 +1,8 @@
 .regular-customers__title {
   @include respond-to(mobile) {
-    margin-bottom: 50px;
+    text-align: center;
+    margin-top: 60px;
+    margin-bottom: 30px;
     font-family: Roboto;
     font-style: normal;
     font-weight: bold;
@@ -34,6 +36,7 @@
 }
 .client {
   @include respond-to(mobile) {
+    margin-bottom: 15px;
     &:nth-child(1) {
       margin-right: 15px;
     }
@@ -43,7 +46,7 @@
     &:nth-child(5) {
       margin-right: 15px;
     }
-    width: 137px;
+    width: 210px;
   }
   @include respond-to(desktop) {
     margin-right: 30px;

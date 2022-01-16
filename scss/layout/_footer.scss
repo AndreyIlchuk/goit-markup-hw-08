@@ -71,12 +71,18 @@
 }
 
 .footer-contacts {
+  @include respond-to(mobile) {
+    padding-bottom: 60px;
+  }
   @include respond-to(desktop) {
     display: flex;
     flex-direction: column;
   }
 }
 .footer-social {
+  @include respond-to(mobile) {
+    padding-bottom: 60px;
+  }
   @include respond-to(desktop) {
     margin-left: 70px;
   }
@@ -123,6 +129,7 @@
 }
 .footer-form__label {
   @include respond-to(mobile) {
+    width: 100%;
   }
   @include respond-to(desktop) {
     display: flex;

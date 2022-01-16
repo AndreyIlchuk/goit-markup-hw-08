@@ -2,7 +2,9 @@
   @include respond-to(mobile) {
     display: none;
   }
-  @include respond-to(tablet) {
+
+  @include respond-to(desktop) {
+    display: block;
     padding: 94px 0;
   }
 }
