@@ -38,15 +38,15 @@
   @include respond-to(mobile) {
     margin-bottom: 15px;
     &:nth-child(1) {
-      margin-right: 15px;
+      margin-right: 30px;
     }
     &:nth-child(3) {
-      margin-right: 15px;
+      margin-right: 30px;
     }
     &:nth-child(5) {
-      margin-right: 15px;
+      margin-right: 30px;
     }
-    width: 210px;
+    width: 180px;
   }
   @include respond-to(desktop) {
     margin-right: 30px;

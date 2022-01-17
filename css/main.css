@@ -537,7 +537,6 @@ a {
 
 @media screen and (min-width: 319px) {
   .footer {
-    width: 320px;
     margin: 0 auto;
     padding: 0 15px;
   }
@@ -622,7 +621,9 @@ a {
 
 @media screen and (min-width: 319px) {
   .button-menu {
-    margin-left: 276px;
+    position: absolute;
+    top: 22px;
+    right: 22px;
     -webkit-box-align: center;
     -webkit-align-items: center;
         -ms-flex-align: center;
@@ -939,15 +940,25 @@ a {
 
 @media screen and (min-width: 1280px) {
   .feature__antenna {
-    width: 270px;
-    height: 120px;
+    width: 70px;
+    height: 70px;
   }
 }
 
 @media screen and (min-width: 319px) {
   .feature-svg {
-    padding: 25px 190px;
-    width: 450px;
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+    -webkit-justify-content: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: center;
+    -webkit-align-items: center;
+        -ms-flex-align: center;
+            align-items: center;
     height: 120px;
     background: #f5f4fa;
     -webkit-border-radius: 4px;
@@ -957,7 +968,18 @@ a {
 
 @media screen and (min-width: 1280px) {
   .feature-svg {
-    padding: 25px 100px;
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+    -webkit-justify-content: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: center;
+    -webkit-align-items: center;
+        -ms-flex-align: center;
+            align-items: center;
     width: 270px;
     height: 120px;
     background: #f5f4fa;
@@ -975,8 +997,8 @@ a {
 
 @media screen and (min-width: 1280px) {
   .feature__clock {
-    width: 270px;
-    height: 120px;
+    width: 70px;
+    height: 70px;
   }
 }
 
@@ -989,8 +1011,8 @@ a {
 
 @media screen and (min-width: 1280px) {
   .feature__diagram {
-    width: 270px;
-    height: 120px;
+    width: 70px;
+    height: 70px;
   }
 }
 
@@ -1003,8 +1025,8 @@ a {
 
 @media screen and (min-width: 1280px) {
   .feature__astronaut {
-    width: 270px;
-    height: 120px;
+    width: 70px;
+    height: 70px;
   }
 }
 
@@ -1153,6 +1175,12 @@ a {
             box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);
     -webkit-border-radius: 0px 0px 4px 4px;
             border-radius: 0px 0px 4px 4px;
+  }
+}
+
+@media screen and (min-width: 319px) {
+  .team-img {
+    width: 100%;
   }
 }
 
@@ -1348,16 +1376,16 @@ a {
 @media screen and (min-width: 319px) {
   .client {
     margin-bottom: 15px;
-    width: 210px;
+    width: 180px;
   }
   .client:nth-child(1) {
-    margin-right: 15px;
+    margin-right: 30px;
   }
   .client:nth-child(3) {
-    margin-right: 15px;
+    margin-right: 30px;
   }
   .client:nth-child(5) {
-    margin-right: 15px;
+    margin-right: 30px;
   }
 }
 
@@ -1606,6 +1634,12 @@ a {
 @media screen and (min-width: 1280px) {
   .icon {
     fill: var(--accent-color);
+  }
+}
+
+@media screen and (min-width: 319px) {
+  .footer-email {
+    width: 100%;
   }
 }
 

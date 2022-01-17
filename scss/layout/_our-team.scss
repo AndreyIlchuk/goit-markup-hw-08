@@ -50,6 +50,7 @@
 }
 .team-img {
   @include respond-to(mobile) {
+    width: 100%;
   }
   @include respond-to(desktop) {
     width: 270px;

@@ -119,6 +119,9 @@
   }
 }
 .footer-email {
+  @include respond-to(mobile) {
+    width: 100%;
+  }
   @include respond-to(desktop) {
     margin-left: 93px;
   }
