@@ -442,13 +442,12 @@ a {
   .hiro {
     width: 100%;
     background: rgba(47, 48, 58, 0.4);
-    padding: 77px 0;
-    background-position: center;
-    background-repeat: no-repeat;
-    background-image: -webkit-gradient(linear, left top, right top, from(rgba(0, 0, 0, 0.5)), to(rgba(0, 0, 0, 0.5))), url(../img/Headerimg.jpg);
-    background-image: -webkit-linear-gradient(left, rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url(../img/Headerimg.jpg);
-    background-image: -o-linear-gradient(left, rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url(../img/Headerimg.jpg);
-    background-image: linear-gradient(to right, rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url(../img/Headerimg.jpg);
+    padding: 118px 0;
+    min-height: 480px;
+    background: -webkit-gradient(linear, left top, right top, from(rgba(0, 0, 0, 0.5)), to(rgba(0, 0, 0, 0.5))), url(/img/img7.jpg) center/cover no-repeat;
+    background: -webkit-linear-gradient(left, rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url(/img/img7.jpg) center/cover no-repeat;
+    background: -o-linear-gradient(left, rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url(/img/img7.jpg) center/cover no-repeat;
+    background: linear-gradient(to right, rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url(/img/img7.jpg) center/cover no-repeat;
   }
 }
 
@@ -457,6 +456,7 @@ a {
     width: 100%;
     background: rgba(47, 48, 58, 0.4);
     padding: 200px 0 200px 0;
+    height: 600px;
     background-position: center;
     background-repeat: no-repeat;
     background-image: -webkit-gradient(linear, left top, right top, from(rgba(0, 0, 0, 0.5)), to(rgba(0, 0, 0, 0.5))), url(../img/img7.jpg);
@@ -932,8 +932,8 @@ a {
 
 @media screen and (min-width: 319px) {
   .feature__antenna {
-    width: 450px;
-    height: 120px;
+    width: 70px;
+    height: 70px;
   }
 }
 
@@ -941,14 +941,35 @@ a {
   .feature__antenna {
     width: 270px;
     height: 120px;
-    margin-bottom: 30px;
+  }
+}
+
+@media screen and (min-width: 319px) {
+  .feature-svg {
+    padding: 25px 190px;
+    width: 450px;
+    height: 120px;
+    background: #f5f4fa;
+    -webkit-border-radius: 4px;
+            border-radius: 4px;
+  }
+}
+
+@media screen and (min-width: 1280px) {
+  .feature-svg {
+    padding: 25px 100px;
+    width: 270px;
+    height: 120px;
+    background: #f5f4fa;
+    -webkit-border-radius: 4px;
+            border-radius: 4px;
   }
 }
 
 @media screen and (min-width: 319px) {
   .feature__clock {
-    width: 450px;
-    height: 120px;
+    width: 70px;
+    height: 70px;
   }
 }
 
@@ -956,14 +977,13 @@ a {
   .feature__clock {
     width: 270px;
     height: 120px;
-    margin-bottom: 30px;
   }
 }
 
 @media screen and (min-width: 319px) {
   .feature__diagram {
-    width: 450px;
-    height: 120px;
+    width: 70px;
+    height: 70px;
   }
 }
 
@@ -971,14 +991,13 @@ a {
   .feature__diagram {
     width: 270px;
     height: 120px;
-    margin-bottom: 30px;
   }
 }
 
 @media screen and (min-width: 319px) {
   .feature__astronaut {
-    width: 450px;
-    height: 120px;
+    width: 70px;
+    height: 70px;
   }
 }
 
@@ -986,7 +1005,6 @@ a {
   .feature__astronaut {
     width: 270px;
     height: 120px;
-    margin-bottom: 30px;
   }
 }
 
@@ -1059,7 +1077,7 @@ a {
   position: absolute;
   width: 370px;
   height: 70px;
-  top: 1438px;
+  top: 1433px;
   background: rgba(47, 48, 58, 0.8);
 }
 
@@ -1135,13 +1153,6 @@ a {
             box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);
     -webkit-border-radius: 0px 0px 4px 4px;
             border-radius: 0px 0px 4px 4px;
-  }
-}
-
-@media screen and (min-width: 319px) {
-  .team-img {
-    width: 450px;
-    height: 460px;
   }
 }
 
@@ -1522,6 +1533,7 @@ a {
 
 @media screen and (min-width: 1280px) {
   .footer-contacts {
+    padding: 0;
     display: -webkit-box;
     display: -webkit-flex;
     display: -ms-flexbox;
@@ -1542,6 +1554,7 @@ a {
 
 @media screen and (min-width: 1280px) {
   .footer-social {
+    padding: 0;
     margin-left: 70px;
   }
 }

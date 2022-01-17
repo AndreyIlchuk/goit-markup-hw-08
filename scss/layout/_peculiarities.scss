@@ -19,46 +19,62 @@
 }
 .feature__antenna {
   @include respond-to(mobile) {
-    width: 450px;
-    height: 120px;
+    width: 70px;
+    height: 70px;
   }
   @include respond-to(desktop) {
     width: 270px;
     height: 120px;
-    margin-bottom: 30px;
+  }
+}
+.feature-svg {
+  @include respond-to(mobile) {
+    padding: 25px 190px;
+    width: 450px;
+    height: 120px;
+    background: #f5f4fa;
+    border-radius: 4px;
+  }
+  @include respond-to(desktop) {
+    padding: 25px 100px;
+    width: 270px;
+    height: 120px;
+    background: #f5f4fa;
+    border-radius: 4px;
+  }
+}
+.svg {
+  @include respond-to(mobile) {
   }
 }
 .feature__clock {
   @include respond-to(mobile) {
-    width: 450px;
-    height: 120px;
+    width: 70px;
+    height: 70px;
   }
   @include respond-to(desktop) {
     width: 270px;
     height: 120px;
-    margin-bottom: 30px;
   }
 }
 .feature__diagram {
   @include respond-to(mobile) {
-    width: 450px;
-    height: 120px;
+    width: 70px;
+    height: 70px;
   }
   @include respond-to(desktop) {
     width: 270px;
     height: 120px;
-    margin-bottom: 30px;
   }
 }
 .feature__astronaut {
   @include respond-to(mobile) {
-    width: 450px;
-    height: 120px;
+    width: 70px;
+    height: 70px;
   }
   @include respond-to(desktop) {
     width: 270px;
     height: 120px;
-    margin-bottom: 30px;
   }
 }
 .feature__title {
