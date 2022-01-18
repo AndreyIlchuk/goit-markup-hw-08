@@ -42,12 +42,8 @@
     }
   }
 }
-.mobile-menu {
-  @include respond-to(tablet) {
-    display: none;
-  }
-}
-.button-menu {
+
+.menu-button {
   @include respond-to(mobile) {
     position: absolute;
     top: 22px;
@@ -60,35 +56,50 @@
     display: none;
   }
 }
-.button-menu .icon-close {
-  display: none;
-}
-.button-menu.is-open .icon-close {
-  display: block;
-}
-.button-menu.is-open .icon-menu {
-  display: none;
-}
-
-.menu-container {
+.menu-button .icon-close {
   @include respond-to(mobile) {
+    display: none;
+  }
+}
+.menu-button.is-open .icon-close {
+  @include respond-to(mobile) {
+    display: block;
+  }
+}
+.menu-button.is-open .icon-menu {
+  @include respond-to(mobile) {
+    display: none;
+  }
+}
+.mobile-menu {
+  @include respond-to(tablet) {
+    display: none;
   }
   @include respond-to(desktop) {
+    display: none;
+  }
+}
+.menu-container {
+  @include respond-to(mobile) {
+    display: none;
+    position: absolute;
+    display: flex;
+    width: 480px;
+    height: 796px;
+    left: 0px;
+    top: 0px;
+    background: #fff;
+    &.is-open {
+      display: block;
+      display: none;
+    }
+  }
+  @include respond-to(desktop) {
+    display: none;
     display: flex;
     align-items: center;
     justify-content: center;
   }
-  // display: none;
-  // position: absolute;
-  // display: flex;
-  // width: 480px;
-  // height: 796px;
-  // left: 0px;
-  // top: 0px;
-  // background: #ffffff;
-  // &is-open {
-  //   display: block;
-  // }
 }
 .top-link {
   @include respond-to(mobile) {

@@ -1,4 +1,7 @@
 .header {
+  @include respond-to(mobile) {
+    position: relative;
+  }
   @include respond-to(desktop) {
     width: 100%;
     background: #ffffff;
