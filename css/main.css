@@ -690,7 +690,6 @@ a {
     display: -ms-inline-flexbox;
     display: inline-flex;
     background-color: transparent;
-    z-index: 5;
   }
 }
 

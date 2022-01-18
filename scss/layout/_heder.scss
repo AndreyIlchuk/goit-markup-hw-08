@@ -51,7 +51,6 @@
     align-items: center;
     display: inline-flex;
     background-color: transparent;
-    z-index: 5;
   }
   @include respond-to(tablet) {
     display: none;
