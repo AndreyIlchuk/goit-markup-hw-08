@@ -507,10 +507,12 @@ a {
     background: rgba(47, 48, 58, 0.4);
     padding: 118px 0;
     min-height: 480px;
-    background: -webkit-gradient(linear, left top, right top, from(rgba(0, 0, 0, 0.5)), to(rgba(0, 0, 0, 0.5))), url(/img/img7.jpg) center/cover no-repeat;
-    background: -webkit-linear-gradient(left, rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url(/img/img7.jpg) center/cover no-repeat;
-    background: -o-linear-gradient(left, rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url(/img/img7.jpg) center/cover no-repeat;
-    background: linear-gradient(to right, rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url(/img/img7.jpg) center/cover no-repeat;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-image: -webkit-gradient(linear, left top, right top, from(rgba(0, 0, 0, 0.5)), to(rgba(0, 0, 0, 0.5))), url(../img/img7.jpg);
+    background-image: -webkit-linear-gradient(left, rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url(../img/img7.jpg);
+    background-image: -o-linear-gradient(left, rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url(../img/img7.jpg);
+    background-image: linear-gradient(to right, rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url(../img/img7.jpg);
   }
 }
 
