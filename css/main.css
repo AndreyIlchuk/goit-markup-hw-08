@@ -690,6 +690,13 @@ a {
     display: -ms-inline-flexbox;
     display: inline-flex;
     background-color: transparent;
+    z-index: 5;
+  }
+}
+
+@media screen and (min-width: 767px) {
+  .menu-button {
+    display: none;
   }
 }
 
@@ -729,7 +736,7 @@ a {
   }
 }
 
-@media screen and (min-width: 319px) {
+@media screen and (max-width: 767px) {
   .menu-container {
     display: none;
     position: absolute;
@@ -739,8 +746,8 @@ a {
     display: flex;
     width: 480px;
     height: 796px;
-    left: 0px;
-    top: 0px;
+    left: 0;
+    top: 100%;
     background: #fff;
   }
   .menu-container.is-open {
@@ -751,23 +758,14 @@ a {
 
 @media screen and (min-width: 1280px) {
   .menu-container {
-    display: none;
     display: -webkit-box;
     display: -webkit-flex;
     display: -ms-flexbox;
     display: flex;
-    -webkit-box-align: center;
-    -webkit-align-items: center;
-        -ms-flex-align: center;
-            align-items: center;
-    -webkit-box-pack: center;
-    -webkit-justify-content: center;
-        -ms-flex-pack: center;
-            justify-content: center;
   }
 }
 
-@media screen and (min-width: 319px) {
+@media screen and (max-width: 767px) {
   .top-link {
     display: none;
   }
@@ -851,7 +849,7 @@ a {
           border-radius: 2px;
 }
 
-@media screen and (min-width: 319px) {
+@media screen and (max-width: 767px) {
   .adress {
     display: none;
   }

@@ -51,6 +51,10 @@
     align-items: center;
     display: inline-flex;
     background-color: transparent;
+    z-index: 5;
+  }
+  @include respond-to(tablet) {
+    display: none;
   }
   @include respond-to(desktop) {
     display: none;
@@ -80,29 +84,32 @@
   }
 }
 .menu-container {
-  @include respond-to(mobile) {
+  @media screen and (max-width: 767px) {
     display: none;
     position: absolute;
     display: flex;
     width: 480px;
     height: 796px;
-    left: 0px;
-    top: 0px;
+    left: 0;
+    top: 100%;
     background: #fff;
     &.is-open {
       display: block;
       display: none;
     }
   }
+  @include respond-to(tablet) {
+    // display: none;
+  }
   @include respond-to(desktop) {
-    display: none;
     display: flex;
-    align-items: center;
-    justify-content: center;
+    // display: none;
   }
 }
 .top-link {
   @include respond-to(mobile) {
+  }
+  @media screen and (max-width: 767px) {
     display: none;
   }
   @include respond-to(tablet) {
@@ -158,6 +165,8 @@
 }
 .adress {
   @include respond-to(mobile) {
+  }
+  @media screen and (max-width: 767px) {
     display: none;
   }
   @include respond-to(tablet) {
