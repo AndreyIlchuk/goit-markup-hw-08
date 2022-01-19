@@ -5,6 +5,9 @@
     padding-bottom: 94px;
     background: #f5f4fa;
   }
+  @include respond-to(tablet) {
+    padding: 60px 0;
+  }
   @include respond-to(desktop) {
     text-align: center;
     padding-top: 94px;

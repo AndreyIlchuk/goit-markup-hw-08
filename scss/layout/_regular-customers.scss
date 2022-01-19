@@ -48,12 +48,36 @@
     }
     width: 180px;
   }
+  @include respond-to(tablet) {
+    margin-bottom: 15px;
+    &:nth-child(1) {
+      margin-right: 30px;
+    }
+    &:nth-child(2) {
+      margin-right: 30px;
+    }
+    &:nth-child(3) {
+      margin-right: 0;
+    }
+    &:nth-child(4) {
+      margin-right: 30px;
+    }
+    &:nth-child(5) {
+      margin-right: 30px;
+    }
+    width: 226px;
+    height: 92px;
+  }
+
   @include respond-to(desktop) {
-    margin-right: 30px;
+    &:not(:last-child) {
+      margin-right: 30px;
+    }
     width: 170px;
     height: 92px;
   }
 }
+
 .customers__link {
   width: 100%;
   height: 100%;

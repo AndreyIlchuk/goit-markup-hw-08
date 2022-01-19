@@ -1,8 +1,8 @@
 .header__nav {
   @include respond-to(mobile) {
     display: flex;
-    padding-top: 16px;
-    padding-bottom: 16px;
+  }
+  @include respond-to(tablet) {
   }
   @include respond-to(desktop) {
     padding: 0;
@@ -12,6 +12,23 @@
 }
 .top-line-link {
   @include respond-to(mobile) {
+    font-family: Raleway;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 24px;
+    line-height: 1.16;
+    letter-spacing: 0.03em;
+    color: #000;
+    text-decoration: none;
+    transition: background-color, fill, color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+    &:hover,
+    &:focus {
+      color: #2196f3;
+    }
+  }
+  @include respond-to(tablet) {
+    display: flex;
+    align-items: center;
     font-family: Raleway;
     font-style: normal;
     font-weight: bold;
@@ -51,6 +68,7 @@
     align-items: center;
     display: inline-flex;
     background-color: transparent;
+    z-index: 2;
   }
   @include respond-to(tablet) {
     display: none;
@@ -67,6 +85,7 @@
 .menu-button.is-open .icon-close {
   @include respond-to(mobile) {
     display: block;
+    z-index: 2;
   }
 }
 .menu-button.is-open .icon-menu {
@@ -84,27 +103,23 @@
 }
 .menu-container {
   @include respond-to(mobile) {
-  }
-
-  @media screen and (max-width: 767px) {
-    display: none;
-    position: absolute;
-    display: flex;
-    width: 480px;
-    height: 796px;
-    left: 0;
-    top: 100%;
-    background: #fff;
-    &.is-open {
+    .menu-container.is-open {
+      position: absolute;
       display: block;
+      width: 480px;
+      height: 796px;
+      left: 0;
+      top: 100%;
+      background: #fff;
     }
   }
   @include respond-to(tablet) {
-    // display: none;
+    display: flex;
   }
   @include respond-to(desktop) {
+    display: block;
     display: flex;
-    // display: none;
+    align-items: center;
   }
 }
 .top-link {
@@ -116,11 +131,11 @@
   @include respond-to(tablet) {
     display: flex;
     align-items: center;
-    justify-content: center;
   }
   @include respond-to(desktop) {
     display: flex;
     align-items: center;
+    justify-content: center;
   }
 }
 
@@ -129,13 +144,33 @@
   color: #2196f3;
 }
 .top-link__item:nth-child(1) {
-  margin: 0 50px 0 93px;
+  @include respond-to(tablet) {
+    margin: 0 50px 0 88px;
+  }
+  @include respond-to(desktop) {
+    margin: 0 50px 0 93px;
+  }
 }
 .top-link__item:nth-child(2) {
   margin-right: 50px;
 }
 .adress-item:nth-child(1) {
-  margin: 0 30px 0 305px;
+  @include respond-to(tablet) {
+    margin-left: 84px;
+  }
+  @include respond-to(desktop) {
+    margin: 0 30px 0 305px;
+  }
+}
+.tel {
+  @include respond-to(tablet) {
+    margin-top: 10px;
+    margin-left: 84px;
+  }
+  @include respond-to(desktop) {
+    margin-top: 0;
+    margin-left: 0;
+  }
 }
 .top-link__nav {
   font-family: Roboto;
@@ -171,6 +206,8 @@
     display: none;
   }
   @include respond-to(tablet) {
+  }
+  @include respond-to(desktop) {
     display: flex;
     align-items: center;
     justify-content: center;
@@ -186,24 +223,47 @@
 }
 
 .mail-link {
-  display: flex;
-  align-items: center;
-  font-family: Roboto;
-  font-style: normal;
-  font-weight: 500;
-  font-size: 14px;
-  line-height: 1.14;
-  letter-spacing: 0.02em;
-  color: #757575;
-  text-decoration: none;
-  transition: background-color, fill, color 250ms cubic-bezier(0.4, 0, 0.2, 1);
-  &:hover,
-  &:focus {
-    color: #2196f3;
+  @include respond-to(tablet) {
+    display: flex;
+    align-items: center;
+    font-family: Roboto;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 12px;
+    line-height: 1.16;
+    letter-spacing: 0.02em;
+    color: #757575;
+    text-decoration: none;
+    transition: background-color, fill, color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+    &:hover,
+    &:focus {
+      color: #2196f3;
+    }
+    &:hover .mail-icon,
+    &:focus .mail-icon {
+      fill: #2196f3;
+    }
   }
-  &:hover .mail-icon,
-  &:focus .mail-icon {
-    fill: #2196f3;
+  @include respond-to(desktop) {
+    display: flex;
+    align-items: center;
+    font-family: Roboto;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 1.14;
+    letter-spacing: 0.02em;
+    color: #757575;
+    text-decoration: none;
+    transition: background-color, fill, color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+    &:hover,
+    &:focus {
+      color: #2196f3;
+    }
+    &:hover .mail-icon,
+    &:focus .mail-icon {
+      fill: #2196f3;
+    }
   }
 }
 
@@ -214,25 +274,58 @@
 }
 
 .tel-link {
-  font-family: Roboto;
-  font-style: normal;
-  font-weight: 500;
-  font-size: 14px;
-  line-height: 1.14;
-  letter-spacing: 0.02em;
-  text-decoration: none;
-  color: #757575;
-  transition: background-color, fill, color 250ms cubic-bezier(0.4, 0, 0.2, 1);
-  &:hover,
-  &:focus {
-    color: #2196f3;
-    &:hover .tel-icon,
-    &:focus .tel-icon {
-      fill: #2196f3;
+  @include respond-to(tablet) {
+    font-family: Roboto;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 12px;
+    line-height: 1.16;
+    letter-spacing: 0.02em;
+    text-decoration: none;
+    color: #757575;
+    transition: background-color, fill, color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+    &:hover,
+    &:focus {
+      color: #2196f3;
+      &:hover .tel-icon,
+      &:focus .tel-icon {
+        fill: #2196f3;
+      }
+    }
+  }
+  @include respond-to(desktop) {
+    font-family: Roboto;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 1.14;
+    letter-spacing: 0.02em;
+    text-decoration: none;
+    color: #757575;
+    transition: background-color, fill, color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+    &:hover,
+    &:focus {
+      color: #2196f3;
+      &:hover .tel-icon,
+      &:focus .tel-icon {
+        fill: #2196f3;
+      }
     }
   }
 }
 
 .span {
   color: #2196f3;
+}
+
+@include respond-to(mobile) {
+  .menu-container.is-open {
+    position: absolute;
+    display: block;
+    width: 420px;
+    height: 796px;
+    left: 0;
+    top: 100%;
+    background: #fff;
+  }
 }
