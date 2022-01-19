@@ -20,7 +20,9 @@
   }
 }
 .feature:nth-child(odd) {
-  margin-right: 30px;
+  @include respond-to(tablet) {
+    margin-right: 30px;
+  }
 }
 .feature {
   @include respond-to(tablet) {

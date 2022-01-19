@@ -1177,8 +1177,10 @@ a {
   }
 }
 
-.feature:nth-child(odd) {
-  margin-right: 30px;
+@media screen and (min-width: 767px) {
+  .feature:nth-child(odd) {
+    margin-right: 30px;
+  }
 }
 
 @media screen and (min-width: 767px) {
@@ -1504,8 +1506,10 @@ a {
   }
 }
 
-.team__img:nth-child(odd) {
-  margin-right: 30px;
+@media screen and (min-width: 767px) {
+  .team__img:nth-child(odd) {
+    margin-right: 30px;
+  }
 }
 
 @media screen and (min-width: 319px) {

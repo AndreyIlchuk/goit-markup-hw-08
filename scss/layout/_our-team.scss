@@ -62,7 +62,9 @@
   }
 }
 .team__img:nth-child(odd) {
-  margin-right: 30px;
+  @include respond-to(tablet) {
+    margin-right: 30px;
+  }
 }
 .team-img {
   @include respond-to(mobile) {
