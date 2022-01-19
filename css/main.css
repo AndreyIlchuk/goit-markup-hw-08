@@ -753,7 +753,6 @@ a {
   }
   .menu-container.is-open {
     display: block;
-    display: none;
   }
 }
 

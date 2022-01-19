@@ -83,6 +83,9 @@
   }
 }
 .menu-container {
+  @include respond-to(mobile) {
+  }
+
   @media screen and (max-width: 767px) {
     display: none;
     position: absolute;
@@ -94,7 +97,6 @@
     background: #fff;
     &.is-open {
       display: block;
-      display: none;
     }
   }
   @include respond-to(tablet) {
