@@ -6,6 +6,7 @@
     align-items: center;
   }
   @include respond-to(tablet) {
+    display: flex;
   }
 
   @include respond-to(desktop) {
@@ -14,6 +15,7 @@
   }
 }
 .footer-adress {
+  min-width: 232px;
   flex-direction: column;
   padding-top: 20px;
   font-family: Roboto;
@@ -135,7 +137,6 @@
     width: 100%;
   }
   @include respond-to(tablet) {
-    // margin: 247px 152px 60px 166px;
   }
   @include respond-to(desktop) {
     margin-left: 93px;

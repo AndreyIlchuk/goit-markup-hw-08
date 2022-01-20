@@ -926,12 +926,6 @@ a {
           border-radius: 2px;
 }
 
-@media screen and (max-width: 767px) {
-  .adress {
-    display: none;
-  }
-}
-
 @media screen and (min-width: 1280px) {
   .adress {
     display: -webkit-box;
@@ -1825,6 +1819,15 @@ a {
   }
 }
 
+@media screen and (min-width: 767px) {
+  .footer-container {
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+  }
+}
+
 @media screen and (min-width: 1280px) {
   .footer-container {
     display: -webkit-box;
@@ -1839,6 +1842,7 @@ a {
 }
 
 .footer-adress {
+  min-width: 232px;
   -webkit-box-orient: vertical;
   -webkit-box-direction: normal;
   -webkit-flex-direction: column;
