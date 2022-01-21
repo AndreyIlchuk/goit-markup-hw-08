@@ -1052,6 +1052,7 @@ a {
 
 @media screen and (min-width: 319px) {
   .adress-item {
+    margin-top: 32px;
     margin-left: 40px;
   }
 }
