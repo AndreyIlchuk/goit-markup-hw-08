@@ -2551,6 +2551,7 @@ a {
 
 @media screen and (min-width: 319px) {
   .filters {
+    margin-bottom: 40px;
     display: -webkit-box;
     display: -webkit-flex;
     display: -ms-flexbox;
@@ -2563,6 +2564,7 @@ a {
 
 @media screen and (min-width: 1280px) {
   .filters {
+    margin-bottom: 0;
     display: -webkit-box;
     display: -webkit-flex;
     display: -ms-flexbox;

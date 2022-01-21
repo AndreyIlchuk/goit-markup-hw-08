@@ -31,10 +31,12 @@
 }
 .filters {
   @include respond-to(mobile) {
+    margin-bottom: 40px;
     display: flex;
     flex-wrap: wrap;
   }
   @include respond-to(desktop) {
+    margin-bottom: 0;
     display: flex;
     justify-content: center;
   }
