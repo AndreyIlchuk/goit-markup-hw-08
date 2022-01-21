@@ -7,9 +7,10 @@
   }
   @include respond-to(tablet) {
     display: flex;
+    flex-wrap: wrap;
   }
-
   @include respond-to(desktop) {
+    flex-wrap: nowrap;
     display: flex;
     align-items: baseline;
   }
@@ -137,15 +138,22 @@
     width: 100%;
   }
   @include respond-to(tablet) {
+    display: flex;
+    align-items: center;
+    justify-content: center;
   }
   @include respond-to(desktop) {
     margin-left: 93px;
   }
 }
 .footer-form {
-  @include respond-to(desktop) {
+  @include respond-to(tablet) {
+    margin-top: 60px;
+    width: 450px;
     display: flex;
     flex-direction: column;
+  }
+  @include respond-to(desktop) {
   }
 }
 .footer-form__label {
@@ -157,14 +165,40 @@
   }
 }
 .footer-form__title {
-  font-family: Roboto;
-  font-style: normal;
-  font-weight: bold;
-  font-size: 14px;
-  line-height: 16px;
-  letter-spacing: 0.03em;
-  text-transform: uppercase;
-  color: #ffffff;
+  @include respond-to(mobile) {
+    text-align: center;
+    font-family: Roboto;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 14px;
+    line-height: 16px;
+    letter-spacing: 0.03em;
+    text-transform: uppercase;
+    color: #ffffff;
+  }
+
+  @include respond-to(tablet) {
+    text-align: center;
+    font-family: Roboto;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 14px;
+    line-height: 16px;
+    letter-spacing: 0.03em;
+    text-transform: uppercase;
+    color: #ffffff;
+  }
+  @include respond-to(desktop) {
+    text-align: left;
+    font-family: Roboto;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 14px;
+    line-height: 16px;
+    letter-spacing: 0.03em;
+    text-transform: uppercase;
+    color: #ffffff;
+  }
 }
 .footer-input {
   @include respond-to(mobile) {
