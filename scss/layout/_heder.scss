@@ -273,7 +273,6 @@
 }
 .adress-item {
   @include respond-to(mobile) {
-    margin-top: 32px;
     margin-left: 40px;
   }
   @include respond-to(tablet) {

@@ -4,7 +4,7 @@
     position: relative;
   }
   @include respond-to(tablet) {
-    padding: 20px 0;
+    padding: 22px 0;
   }
   @include respond-to(desktop) {
     width: 100%;
