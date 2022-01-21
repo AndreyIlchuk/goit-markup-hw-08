@@ -184,16 +184,7 @@
     margin: 0 30px 0 305px;
   }
 }
-.tel {
-  @include respond-to(tablet) {
-    margin-top: 10px;
-    margin-left: 84px;
-  }
-  @include respond-to(desktop) {
-    margin-top: 0;
-    margin-left: 0;
-  }
-}
+
 .top-link__nav {
   @include respond-to(mobile) {
     font-family: Roboto;
@@ -275,11 +266,22 @@
   @include respond-to(desktop) {
     display: block;
     display: flex;
-    align-items: center;
-    justify-content: center;
+    flex-direction: column-reverse;
   }
 }
-
+.adress-item {
+  @include respond-to(mobile) {
+    margin-top: 10px;
+    margin-left: 40px;
+  }
+  @include respond-to(tablet) {
+    margin-left: 84px;
+  }
+  @include respond-to(desktop) {
+    margin-top: 5px;
+    margin-left: 305px;
+  }
+}
 .mail-icon {
   @include respond-to(mobile) {
     display: none;
@@ -303,6 +305,20 @@
 }
 
 .mail-link {
+  @include respond-to(mobile) {
+    font-family: Roboto;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 24px;
+    line-height: 28px;
+    letter-spacing: 0.02em;
+    color: #757575;
+    transition: background-color, fill, color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+    &:hover,
+    &:focus {
+      color: #2196f3;
+    }
+  }
   @include respond-to(tablet) {
     display: flex;
     align-items: center;
@@ -348,6 +364,7 @@
 }
 .tel {
   @include respond-to(mobile) {
+    flex-direction: row-reverse;
     margin-top: 302px;
     margin-left: 40px;
   }
@@ -356,8 +373,8 @@
     margin-left: 84px;
   }
   @include respond-to(desktop) {
-    margin-top: 0;
-    margin-left: 0;
+    margin-top: -15px;
+    margin-left: 495px;
   }
 }
 .tel-icon {
