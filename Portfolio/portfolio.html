@@ -26,14 +26,26 @@
         <header class="header__top-line">
           <nav class="header__nav">
             <a class="top-line-link" href="https://github.com/"
-              ><span class="span">Web</span>Studio</a
-            >
-            <ul class="top-link">
+              ><span class="span">Web</span>Studio</a>
+              <button type="button" class="menu-button"
+              data-menu-button>
+                 <svg class="mobile-menu"
+                  width="24px"
+                  height="16px" 
+                  aria-controls="menu-container"
+                  aria-expanded="false"
+                  aria-label="переключатель мобильного меню">
+                <use class="icon-menu" href=./img/symbol-defs.svg#icon-menu_24px></use>
+                <use class="icon-close" href=./img/symbol-defs.svg#icon-close_24px></use>
+              </svg>
+              </button>
+             <div class="menu-container" id="menu-container" data-menu>
+                 <ul class="top-link">
               <li class="top-link__item">
                 <a class="top-link__nav" href="../index.html">Студия</a>
               </li>
               <li class="top-link__item">
-                <a class="top-link__nav activ" href="Portfolio/portfolio.html"
+                <a class="top-link__nav activ" href="Portfolio/"
                   >Портфолио</a>
                 </li>
               <li class="top-link__item">
@@ -56,6 +68,7 @@
                 >
               </li>
             </ul>
+           </div>     
           </nav>
         </header>
       </div>
