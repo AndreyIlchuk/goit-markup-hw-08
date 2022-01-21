@@ -2,6 +2,7 @@
   @include respond-to(mobile) {
     padding: 16px 0;
     position: relative;
+    border: 1px solid #ececec;
   }
   @include respond-to(tablet) {
     background: #ffffff;

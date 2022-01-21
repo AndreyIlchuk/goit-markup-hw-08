@@ -143,7 +143,7 @@
     justify-content: center;
   }
   @include respond-to(desktop) {
-    margin-left: 93px;
+    margin-left: 83px;
   }
 }
 .footer-form {
@@ -154,6 +154,7 @@
     flex-direction: column;
   }
   @include respond-to(desktop) {
+    width: 100%;
   }
 }
 .footer-form__label {
