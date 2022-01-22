@@ -258,6 +258,7 @@
 }
 .adress {
   @include respond-to(mobile) {
+    flex: 1 1 480px;
   }
   @media screen and (max-width: 767px) {
   }
@@ -464,7 +465,7 @@
     top: 0;
     position: absolute;
     display: block;
-    width: 420px;
+    width: 425px;
     height: 796px;
     left: 0;
     background: #fff;
