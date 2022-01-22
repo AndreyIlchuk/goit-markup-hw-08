@@ -1312,9 +1312,10 @@ a {
     display: none;
   }
   .menu-container.is-open {
+    top: 0;
     position: absolute;
     display: block;
-    width: 480px;
+    width: 420px;
     height: 796px;
     left: 0;
     background: #fff;
