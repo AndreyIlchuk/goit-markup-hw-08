@@ -407,7 +407,7 @@
     font-style: normal;
     font-weight: 500;
     font-size: 34px;
-    line-height: 40px;
+    line-height: 1.17;
     letter-spacing: 0.02em;
     color: #2196f3;
   }
@@ -465,7 +465,7 @@
     top: 0;
     position: absolute;
     display: block;
-    width: 425px;
+    min-width: 480px;
     height: 796px;
     left: 0;
     background: #fff;
