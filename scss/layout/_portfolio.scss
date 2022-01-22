@@ -109,6 +109,7 @@
   @include respond-to(mobile) {
   }
   @include respond-to(tablet) {
+    justify-content: center;
     display: flex;
     flex-wrap: wrap;
   }
@@ -123,7 +124,6 @@
     width: 354px;
     margin-right: 30px;
     margin-top: 14px;
-    position: relative;
     background: #ffffff;
     border: 1px solid #eeeeee;
     box-sizing: border-box;
@@ -139,7 +139,6 @@
   }
   @include respond-to(desktop) {
     width: 370px;
-    position: relative;
     margin-top: 0;
     margin-right: 27px;
     background: #ffffff;
@@ -187,7 +186,6 @@
   @include respond-to(tablet) {
     width: 354px;
     margin-top: 14px;
-    position: relative;
     background: #ffffff;
     border: 1px solid #eeeeee;
     box-sizing: border-box;
@@ -204,7 +202,6 @@
   @include respond-to(desktop) {
     width: 370px;
     margin-top: 0;
-    position: relative;
     margin-right: 27px;
     background: #ffffff;
     border: 1px solid #eeeeee;
@@ -226,7 +223,6 @@
     width: 354px;
     margin-right: 30px;
     margin-top: 30px;
-    position: relative;
     background: #ffffff;
     border: 1px solid #eeeeee;
     box-sizing: border-box;
@@ -244,7 +240,6 @@
     margin-right: 0;
     width: 370px;
     margin-top: 0;
-    position: relative;
     background: #ffffff;
     border: 1px solid #eeeeee;
     box-sizing: border-box;
@@ -264,7 +259,6 @@
   @include respond-to(tablet) {
     width: 354px;
     margin-top: 30px;
-    position: relative;
     background: #ffffff;
     border: 1px solid #eeeeee;
     box-sizing: border-box;
@@ -280,7 +274,6 @@
   }
   @include respond-to(desktop) {
     width: 370px;
-    position: relative;
     margin-top: 30px;
     margin-right: 27px;
     background: #ffffff;
@@ -303,7 +296,6 @@
     width: 354px;
     margin-right: 30px;
     margin-top: 30px;
-    position: relative;
     background: #ffffff;
     border: 1px solid #eeeeee;
     box-sizing: border-box;
@@ -319,7 +311,6 @@
   }
   @include respond-to(desktop) {
     width: 370px;
-    position: relative;
     margin-top: 30px;
     margin-right: 27px;
     background: #ffffff;
@@ -341,7 +332,6 @@
   @include respond-to(tablet) {
     width: 354px;
     margin-top: 30px;
-    position: relative;
     background: #ffffff;
     border: 1px solid #eeeeee;
     box-sizing: border-box;
@@ -357,7 +347,6 @@
   }
   @include respond-to(desktop) {
     width: 370px;
-    position: relative;
     margin-top: 27px;
     background: #ffffff;
     border: 1px solid #eeeeee;
@@ -379,7 +368,6 @@
     width: 354px;
     margin-right: 30px;
     margin-top: 30px;
-    position: relative;
     background: #ffffff;
     border: 1px solid #eeeeee;
     box-sizing: border-box;
@@ -395,7 +383,6 @@
   }
   @include respond-to(desktop) {
     width: 370px;
-    position: relative;
     margin-top: 30px;
     margin-right: 27px;
     background: #ffffff;
@@ -416,7 +403,6 @@
 .container8 {
   @include respond-to(tablet) {
     width: 354px;
-    position: relative;
     margin-top: 30px;
     background: #ffffff;
     border: 1px solid #eeeeee;
@@ -433,7 +419,6 @@
   }
   @include respond-to(desktop) {
     width: 370px;
-    position: relative;
     margin-top: 30px;
     margin-right: 27px;
     background: #ffffff;
@@ -455,7 +440,6 @@
   @include respond-to(tablet) {
     width: 354px;
     margin-top: 30px;
-    position: relative;
     background: #ffffff;
     border: 1px solid #eeeeee;
     box-sizing: border-box;
@@ -471,7 +455,6 @@
   }
   @include respond-to(desktop) {
     width: 370px;
-    position: relative;
     margin-top: 30px;
     background: #ffffff;
     border: 1px solid #eeeeee;
@@ -511,6 +494,9 @@
 }
 .img-portfolio {
   @include respond-to(mobile) {
+    width: 100%;
+  }
+  @include respond-to(tablet) {
     width: 100%;
   }
   @include respond-to(desktop) {
