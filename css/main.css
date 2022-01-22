@@ -1321,6 +1321,7 @@ a {
     display: none;
   }
   .menu-container.is-open {
+    width: 100%;
     top: 0;
     position: absolute;
     display: block;
