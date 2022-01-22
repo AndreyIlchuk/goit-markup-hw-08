@@ -26,7 +26,7 @@
     justify-content: center;
   }
   @include respond-to(desktop) {
-    padding-bottom: 50px;
+    padding-bottom: 34px;
   }
 }
 .filters {
@@ -138,7 +138,9 @@
     }
   }
   @include respond-to(desktop) {
+    width: 370px;
     position: relative;
+    margin-top: 0;
     margin-right: 27px;
     background: #ffffff;
     border: 1px solid #eeeeee;
@@ -200,6 +202,8 @@
     }
   }
   @include respond-to(desktop) {
+    width: 370px;
+    margin-top: 0;
     position: relative;
     margin-right: 27px;
     background: #ffffff;
@@ -237,6 +241,8 @@
     }
   }
   @include respond-to(desktop) {
+    width: 370px;
+    margin-top: 0;
     position: relative;
     background: #ffffff;
     border: 1px solid #eeeeee;
@@ -272,6 +278,7 @@
     }
   }
   @include respond-to(desktop) {
+    width: 370px;
     position: relative;
     margin-top: 30px;
     margin-right: 27px;
@@ -310,6 +317,7 @@
     }
   }
   @include respond-to(desktop) {
+    width: 370px;
     position: relative;
     margin-top: 30px;
     margin-right: 27px;
@@ -347,6 +355,7 @@
     }
   }
   @include respond-to(desktop) {
+    width: 370px;
     position: relative;
     margin-top: 27px;
     background: #ffffff;
@@ -384,6 +393,7 @@
     }
   }
   @include respond-to(desktop) {
+    width: 370px;
     position: relative;
     margin-top: 30px;
     margin-right: 27px;
@@ -403,8 +413,8 @@
 }
 
 .container8 {
-  width: 354px;
   @include respond-to(tablet) {
+    width: 354px;
     position: relative;
     margin-top: 30px;
     background: #ffffff;
@@ -421,6 +431,7 @@
     }
   }
   @include respond-to(desktop) {
+    width: 370px;
     position: relative;
     margin-top: 30px;
     margin-right: 27px;
@@ -458,6 +469,7 @@
     }
   }
   @include respond-to(desktop) {
+    width: 370px;
     position: relative;
     margin-top: 30px;
     background: #ffffff;
@@ -499,5 +511,7 @@
 .img-portfolio {
   @include respond-to(mobile) {
     width: 100%;
+  }
+  @include respond-to(desktop) {
   }
 }

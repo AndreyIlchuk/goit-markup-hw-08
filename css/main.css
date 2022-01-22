@@ -542,10 +542,10 @@ a {
     min-height: 480px;
     background-position: center;
     background-repeat: no-repeat;
-    background-image: -webkit-gradient(linear, left top, right top, from(rgba(0, 0, 0, 0.5)), to(rgba(0, 0, 0, 0.5))), url(../img/img7.jpg);
-    background-image: -webkit-linear-gradient(left, rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url(../img/img7.jpg);
-    background-image: -o-linear-gradient(left, rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url(../img/img7.jpg);
-    background-image: linear-gradient(to right, rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url(../img/img7.jpg);
+    background-image: -webkit-gradient(linear, left top, right top, from(rgba(0, 0, 0, 0.4)), to(rgba(0, 0, 0, 0.4))), url(../img/img7.jpg);
+    background-image: -webkit-linear-gradient(left, rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)), url(../img/img7.jpg);
+    background-image: -o-linear-gradient(left, rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)), url(../img/img7.jpg);
+    background-image: linear-gradient(to right, rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)), url(../img/img7.jpg);
   }
 }
 
@@ -557,10 +557,10 @@ a {
     height: 600px;
     background-position: center;
     background-repeat: no-repeat;
-    background-image: -webkit-gradient(linear, left top, right top, from(rgba(0, 0, 0, 0.5)), to(rgba(0, 0, 0, 0.5))), url(../img/img7.jpg);
-    background-image: -webkit-linear-gradient(left, rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url(../img/img7.jpg);
-    background-image: -o-linear-gradient(left, rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url(../img/img7.jpg);
-    background-image: linear-gradient(to right, rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url(../img/img7.jpg);
+    background-image: -webkit-gradient(linear, left top, right top, from(rgba(17, 7, 7, 0.4)), to(rgba(0, 0, 0, 0.4))), url(../img/img7.jpg);
+    background-image: -webkit-linear-gradient(left, rgba(17, 7, 7, 0.4), rgba(0, 0, 0, 0.4)), url(../img/img7.jpg);
+    background-image: -o-linear-gradient(left, rgba(17, 7, 7, 0.4), rgba(0, 0, 0, 0.4)), url(../img/img7.jpg);
+    background-image: linear-gradient(to right, rgba(17, 7, 7, 0.4), rgba(0, 0, 0, 0.4)), url(../img/img7.jpg);
   }
 }
 
@@ -608,7 +608,6 @@ a {
   .our-team {
     text-align: center;
     padding-top: 94px;
-    padding-bottom: 94px;
     background: #f5f4fa;
   }
 }
@@ -618,7 +617,6 @@ a {
     width: 100%;
     margin: 0 auto;
     text-align: center;
-    padding-top: 94px;
     padding-bottom: 94px;
   }
 }
@@ -756,7 +754,7 @@ a {
     display: -ms-inline-flexbox;
     display: inline-flex;
     background-color: transparent;
-    z-index: 2;
+    z-index: 3;
   }
 }
 
@@ -781,7 +779,7 @@ a {
 @media screen and (min-width: 319px) {
   .menu-button.is-open .icon-close {
     display: block;
-    z-index: 2;
+    z-index: 3;
   }
 }
 
@@ -1328,6 +1326,7 @@ a {
     height: 796px;
     left: 0;
     background: #fff;
+    z-index: 2;
   }
 }
 
@@ -2067,6 +2066,7 @@ a {
 
 @media screen and (min-width: 1280px) {
   .client {
+    margin-bottom: 0;
     width: 170px;
     height: 92px;
   }
@@ -2400,6 +2400,7 @@ a {
 
 @media screen and (min-width: 1280px) {
   .footer-form {
+    margin-top: 0;
     width: 100%;
   }
 }
@@ -2555,7 +2556,7 @@ a {
 
 @media screen and (min-width: 1280px) {
   .filters-portfolio {
-    padding-bottom: 50px;
+    padding-bottom: 34px;
   }
 }
 
@@ -2715,7 +2716,9 @@ a {
 
 @media screen and (min-width: 1280px) {
   .container1 {
+    width: 370px;
     position: relative;
+    margin-top: 0;
     margin-right: 27px;
     background: #ffffff;
     border: 1px solid #eeeeee;
@@ -2796,6 +2799,8 @@ a {
 
 @media screen and (min-width: 1280px) {
   .container2 {
+    width: 370px;
+    margin-top: 0;
     position: relative;
     margin-right: 27px;
     background: #ffffff;
@@ -2840,6 +2845,8 @@ a {
 
 @media screen and (min-width: 1280px) {
   .container3 {
+    width: 370px;
+    margin-top: 0;
     position: relative;
     background: #ffffff;
     border: 1px solid #eeeeee;
@@ -2882,6 +2889,7 @@ a {
 
 @media screen and (min-width: 1280px) {
   .container4 {
+    width: 370px;
     position: relative;
     margin-top: 30px;
     margin-right: 27px;
@@ -2927,6 +2935,7 @@ a {
 
 @media screen and (min-width: 1280px) {
   .container5 {
+    width: 370px;
     position: relative;
     margin-top: 30px;
     margin-right: 27px;
@@ -2971,6 +2980,7 @@ a {
 
 @media screen and (min-width: 1280px) {
   .container6 {
+    width: 370px;
     position: relative;
     margin-top: 27px;
     background: #ffffff;
@@ -3015,6 +3025,7 @@ a {
 
 @media screen and (min-width: 1280px) {
   .container7 {
+    width: 370px;
     position: relative;
     margin-top: 30px;
     margin-right: 27px;
@@ -3035,12 +3046,9 @@ a {
   }
 }
 
-.container8 {
-  width: 354px;
-}
-
 @media screen and (min-width: 767px) {
   .container8 {
+    width: 354px;
     position: relative;
     margin-top: 30px;
     background: #ffffff;
@@ -3062,6 +3070,7 @@ a {
 
 @media screen and (min-width: 1280px) {
   .container8 {
+    width: 370px;
     position: relative;
     margin-top: 30px;
     margin-right: 27px;
@@ -3106,6 +3115,7 @@ a {
 
 @media screen and (min-width: 1280px) {
   .container9 {
+    width: 370px;
     position: relative;
     margin-top: 30px;
     background: #ffffff;

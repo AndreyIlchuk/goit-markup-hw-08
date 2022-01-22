@@ -68,7 +68,7 @@
     align-items: center;
     display: inline-flex;
     background-color: transparent;
-    z-index: 2;
+    z-index: 3;
   }
   @include respond-to(tablet) {
     display: none;
@@ -85,7 +85,7 @@
 .menu-button.is-open .icon-close {
   @include respond-to(mobile) {
     display: block;
-    z-index: 2;
+    z-index: 3;
   }
 }
 .menu-button.is-open .icon-menu {
@@ -469,6 +469,7 @@
     height: 796px;
     left: 0;
     background: #fff;
+    z-index: 2;
   }
 }
 .menu-container {
