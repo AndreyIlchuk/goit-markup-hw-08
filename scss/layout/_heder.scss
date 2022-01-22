@@ -148,9 +148,13 @@
     padding-left: 40px;
   }
   @include respond-to(tablet) {
+    padding-top: 0;
+    padding-left: 0;
     margin: 0 50px 0 88px;
   }
   @include respond-to(desktop) {
+    padding-top: 0;
+    padding-left: 0;
     margin: 0 50px 0 93px;
   }
 }
@@ -160,10 +164,12 @@
     padding-left: 40px;
   }
   @include respond-to(tablet) {
+    padding-left: 0;
     padding: 0;
     margin-right: 50px;
   }
   @include respond-to(desktop) {
+    padding-left: 0;
     padding: 0;
     margin-right: 50px;
   }
@@ -258,7 +264,6 @@
 }
 .adress {
   @include respond-to(mobile) {
-    flex: 1 1 480px;
   }
   @media screen and (max-width: 767px) {
   }
@@ -278,10 +283,14 @@
     padding-left: 40px;
   }
   @include respond-to(tablet) {
+    padding-top: 0;
+    padding-left: 0;
     margin-top: 0;
     margin-left: 84px;
   }
   @include respond-to(desktop) {
+    padding-top: 0;
+    padding-left: 0;
     margin-top: 5px;
     margin-left: 305px;
   }
@@ -373,10 +382,14 @@
     padding-left: 40px;
   }
   @include respond-to(tablet) {
+    padding-top: 0;
+    padding-left: 0;
     margin-top: 10px;
     margin-left: 84px;
   }
   @include respond-to(desktop) {
+    padding-top: 0;
+    padding-left: 0;
     margin-top: -15px;
     margin-left: 495px;
   }
@@ -486,9 +499,13 @@
     padding-left: 40px;
   }
   @include respond-to(tablet) {
+    padding-top: 0;
+    padding-left: 0;
     display: none;
   }
   @include respond-to(desktop) {
+    padding-top: 0;
+    padding-left: 0;
     display: none;
   }
 }
