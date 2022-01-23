@@ -10,14 +10,3 @@
     background-color: #2f303a;
   }
 }
-.footer {
-  @include respond-to(mobile) {
-    margin: 0 auto;
-    padding: 0 15px;
-  }
-  @include respond-to(desktop) {
-    width: 1200px;
-    margin: 0 auto;
-    padding: 0 15px;
-  }
-}

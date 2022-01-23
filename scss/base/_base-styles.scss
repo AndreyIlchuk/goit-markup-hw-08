@@ -4,12 +4,14 @@
     padding-left: 15px;
     padding-right: 15px;
     box-sizing: border-box;
+    justify-content: center;
   }
   @include respond-to(tablet) {
     margin: 0 auto;
     padding-left: 15px;
     padding-right: 15px;
     box-sizing: border-box;
+    justify-content: center;
   }
   @include respond-to(desktop) {
     width: 1200px;
@@ -17,5 +19,6 @@
     padding-left: 15px;
     padding-right: 15px;
     box-sizing: border-box;
+    justify-content: center;
   }
 }
