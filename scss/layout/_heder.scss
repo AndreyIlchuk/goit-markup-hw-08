@@ -387,13 +387,16 @@
 }
 .tel {
   @include respond-to(mobile) {
+    padding-top: 302px;
     flex-direction: row-reverse;
   }
   @include respond-to(tablet) {
+    padding-top: 0;
     margin-top: 10px;
     margin-left: 84px;
   }
   @include respond-to(desktop) {
+    padding-top: 0;
     margin-top: -15px;
     margin-left: 495px;
   }
