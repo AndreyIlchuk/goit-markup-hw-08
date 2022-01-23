@@ -3,6 +3,7 @@
     display: flex;
   }
   @include respond-to(tablet) {
+    justify-content: center;
   }
   @include respond-to(desktop) {
     padding: 0;

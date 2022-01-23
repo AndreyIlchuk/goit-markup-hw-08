@@ -154,12 +154,16 @@
     display: flex;
     align-items: center;
     justify-content: center;
+    text-align: center;
   }
   @include respond-to(desktop) {
     margin-left: 83px;
   }
 }
 .footer-form {
+  @include respond-to(mobile) {
+    text-align: center;
+  }
   @include respond-to(tablet) {
     margin-top: 60px;
     width: 450px;
