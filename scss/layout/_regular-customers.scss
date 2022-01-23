@@ -26,6 +26,7 @@
   @include respond-to(mobile) {
     display: flex;
     flex-wrap: wrap;
+    justify-content: center;
   }
   @include respond-to(desktop) {
     width: 1200px;
