@@ -14,6 +14,12 @@ body {
   font-family: Roboto, sans-serif;
 }
 
+@media screen and (min-width: 319px) {
+  body {
+    overflow: hidden;
+  }
+}
+
 ul {
   padding: 0;
   margin: 0;
@@ -775,7 +781,7 @@ a {
     display: -ms-inline-flexbox;
     display: inline-flex;
     background-color: transparent;
-    z-index: 3;
+    z-index: 5;
   }
 }
 
@@ -858,35 +864,28 @@ a {
 
 @media screen and (min-width: 319px) {
   .menu-link {
-    display: -webkit-box;
-    display: -webkit-flex;
-    display: -ms-flexbox;
-    display: flex;
-    -webkit-flex-wrap: wrap;
-        -ms-flex-wrap: wrap;
-            flex-wrap: wrap;
-    -webkit-box-pack: justify;
-    -webkit-justify-content: space-between;
-        -ms-flex-pack: justify;
-            justify-content: space-between;
+    position: fixed;
+    -webkit-box-flex: 1;
+    -webkit-flex: 1 1 480px;
+        -ms-flex: 1 1 480px;
+            flex: 1 1 480px;
+    padding: 22px 0 47px 40px;
+    min-height: 768px;
+    overflow: hidden;
   }
 }
 
 @media screen and (min-width: 767px) {
   .menu-link {
-    display: -webkit-box;
-    display: -webkit-flex;
-    display: -ms-flexbox;
-    display: flex;
+    padding: 0;
+    min-height: 0;
   }
 }
 
 @media screen and (min-width: 1280px) {
   .menu-link {
-    display: -webkit-box;
-    display: -webkit-flex;
-    display: -ms-flexbox;
-    display: flex;
+    padding: 0;
+    min-height: 0;
   }
 }
 
@@ -929,14 +928,12 @@ a {
 @media screen and (min-width: 319px) {
   .top-link__item:nth-child(1) {
     padding-top: 48px;
-    padding-left: 40px;
   }
 }
 
 @media screen and (min-width: 767px) {
   .top-link__item:nth-child(1) {
     padding-top: 0;
-    padding-left: 0;
     margin: 0 50px 0 88px;
   }
 }
@@ -944,7 +941,6 @@ a {
 @media screen and (min-width: 1280px) {
   .top-link__item:nth-child(1) {
     padding-top: 0;
-    padding-left: 0;
     margin: 0 50px 0 93px;
   }
 }
@@ -952,13 +948,11 @@ a {
 @media screen and (min-width: 319px) {
   .top-link__item:nth-child(2) {
     padding: 32px 0;
-    padding-left: 40px;
   }
 }
 
 @media screen and (min-width: 767px) {
   .top-link__item:nth-child(2) {
-    padding-left: 0;
     padding: 0;
     margin-right: 50px;
   }
@@ -966,21 +960,8 @@ a {
 
 @media screen and (min-width: 1280px) {
   .top-link__item:nth-child(2) {
-    padding-left: 0;
     padding: 0;
     margin-right: 50px;
-  }
-}
-
-@media screen and (min-width: 319px) {
-  .top-link__item:nth-child(3) {
-    padding-left: 40px;
-  }
-}
-
-@media screen and (min-width: 767px) {
-  .top-link__item:nth-child(3) {
-    padding-left: 0;
   }
 }
 
@@ -1112,14 +1093,12 @@ a {
 @media screen and (min-width: 319px) {
   .adress-item {
     padding-top: 32px;
-    padding-left: 40px;
   }
 }
 
 @media screen and (min-width: 767px) {
   .adress-item {
     padding-top: 0;
-    padding-left: 0;
     margin-top: 0;
     margin-left: 84px;
   }
@@ -1128,7 +1107,6 @@ a {
 @media screen and (min-width: 1280px) {
   .adress-item {
     padding-top: 0;
-    padding-left: 0;
     margin-top: 5px;
     margin-left: 305px;
   }
@@ -1253,13 +1231,11 @@ a {
     -webkit-flex-direction: row-reverse;
         -ms-flex-direction: row-reverse;
             flex-direction: row-reverse;
-    padding-left: 40px;
   }
 }
 
 @media screen and (min-width: 767px) {
   .tel {
-    padding-left: 0;
     margin-top: 10px;
     margin-left: 84px;
   }
@@ -1267,7 +1243,6 @@ a {
 
 @media screen and (min-width: 1280px) {
   .tel {
-    padding-left: 0;
     margin-top: -15px;
     margin-left: 495px;
   }
@@ -1377,8 +1352,10 @@ a {
   }
   .menu-container.is-open {
     width: 100%;
+    min-height: 768px;
+    overflow: hidden;
     top: 0;
-    position: absolute;
+    position: fixed;
     display: block;
     height: 100vh;
     left: 0;
@@ -1399,14 +1376,12 @@ a {
 @media screen and (min-width: 319px) {
   .burger-box {
     padding-top: 64px;
-    padding-left: 40px;
   }
 }
 
 @media screen and (min-width: 767px) {
   .burger-box {
     padding-top: 0;
-    padding-left: 0;
     display: none;
   }
 }
@@ -1414,7 +1389,6 @@ a {
 @media screen and (min-width: 1280px) {
   .burger-box {
     padding-top: 0;
-    padding-left: 0;
     display: none;
   }
 }

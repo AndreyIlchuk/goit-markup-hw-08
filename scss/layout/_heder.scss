@@ -68,7 +68,7 @@
     align-items: center;
     display: inline-flex;
     background-color: transparent;
-    z-index: 3;
+    z-index: 5;
   }
   @include respond-to(tablet) {
     display: none;
@@ -123,15 +123,19 @@
 }
 .menu-link {
   @include respond-to(mobile) {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: space-between;
+    position: fixed;
+    flex: 1 1 480px;
+    padding: 22px 0 47px 40px;
+    min-height: 768px;
+    overflow: hidden;
   }
   @include respond-to(tablet) {
-    display: flex;
+    padding: 0;
+    min-height: 0;
   }
   @include respond-to(desktop) {
-    display: flex;
+    padding: 0;
+    min-height: 0;
   }
 }
 .top-link {
@@ -158,41 +162,35 @@
 .top-link__item:nth-child(1) {
   @include respond-to(mobile) {
     padding-top: 48px;
-    padding-left: 40px;
   }
   @include respond-to(tablet) {
     padding-top: 0;
-    padding-left: 0;
+
     margin: 0 50px 0 88px;
   }
   @include respond-to(desktop) {
     padding-top: 0;
-    padding-left: 0;
+
     margin: 0 50px 0 93px;
   }
 }
 .top-link__item:nth-child(2) {
   @include respond-to(mobile) {
     padding: 32px 0;
-    padding-left: 40px;
   }
   @include respond-to(tablet) {
-    padding-left: 0;
     padding: 0;
     margin-right: 50px;
   }
   @include respond-to(desktop) {
-    padding-left: 0;
     padding: 0;
     margin-right: 50px;
   }
 }
 .top-link__item:nth-child(3) {
   @include respond-to(mobile) {
-    padding-left: 40px;
   }
   @include respond-to(tablet) {
-    padding-left: 0;
   }
 }
 .adress-item:nth-child(1) {
@@ -293,17 +291,16 @@
 .adress-item {
   @include respond-to(mobile) {
     padding-top: 32px;
-    padding-left: 40px;
   }
   @include respond-to(tablet) {
     padding-top: 0;
-    padding-left: 0;
+
     margin-top: 0;
     margin-left: 84px;
   }
   @include respond-to(desktop) {
     padding-top: 0;
-    padding-left: 0;
+
     margin-top: 5px;
     margin-left: 305px;
   }
@@ -391,16 +388,12 @@
 .tel {
   @include respond-to(mobile) {
     flex-direction: row-reverse;
-
-    padding-left: 40px;
   }
   @include respond-to(tablet) {
-    padding-left: 0;
     margin-top: 10px;
     margin-left: 84px;
   }
   @include respond-to(desktop) {
-    padding-left: 0;
     margin-top: -15px;
     margin-left: 495px;
   }
@@ -487,8 +480,10 @@
   }
   .menu-container.is-open {
     width: 100%;
+    min-height: 768px;
+    overflow: hidden;
     top: 0;
-    position: absolute;
+    position: fixed;
     display: block;
     height: 100vh;
     left: 0;
@@ -508,16 +503,13 @@
 .burger-box {
   @include respond-to(mobile) {
     padding-top: 64px;
-    padding-left: 40px;
   }
   @include respond-to(tablet) {
     padding-top: 0;
-    padding-left: 0;
     display: none;
   }
   @include respond-to(desktop) {
     padding-top: 0;
-    padding-left: 0;
     display: none;
   }
 }

@@ -10,6 +10,9 @@
 }
 
 body {
+  @include respond-to(mobile) {
+    overflow: hidden;
+  }
   font-family: Roboto, sans-serif;
 }
 
