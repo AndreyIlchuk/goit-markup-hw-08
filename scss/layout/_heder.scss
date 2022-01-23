@@ -3,10 +3,12 @@
     display: flex;
   }
   @include respond-to(tablet) {
+    justify-content: center;
   }
   @include respond-to(desktop) {
     padding: 0;
     align-items: center;
+    justify-content: center;
     display: flex;
   }
 }
@@ -127,7 +129,6 @@
     flex: 1 1 480px;
     padding: 22px 0 47px 40px;
     min-height: 768px;
-    overflow: hidden;
   }
   @include respond-to(tablet) {
     display: flex;
@@ -163,6 +164,7 @@
 }
 .top-link__item:nth-child(1) {
   @include respond-to(mobile) {
+    padding-top: 20px;
   }
   @include respond-to(tablet) {
     padding-top: 0;
