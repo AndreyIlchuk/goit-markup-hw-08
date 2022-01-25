@@ -515,6 +515,7 @@ a {
 
 @media screen and (min-width: 319px) {
   .header {
+    min-width: 480px;
     padding: 16px 0;
     position: relative;
   }
@@ -522,6 +523,7 @@ a {
 
 @media screen and (min-width: 767px) {
   .header {
+    min-width: 768px;
     display: -webkit-box;
     display: -webkit-flex;
     display: -ms-flexbox;
