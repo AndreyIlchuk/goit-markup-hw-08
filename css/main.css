@@ -590,6 +590,7 @@ a {
 
 @media screen and (min-width: 319px) {
   .peculiarities {
+    min-width: 480px;
     padding-top: 60px;
   }
 }
@@ -641,7 +642,7 @@ a {
 
 @media screen and (min-width: 319px) {
   .regular-customers {
-    width: 100%;
+    width: 480px;
     margin: 0 auto;
     text-align: center;
     padding-bottom: 60px;

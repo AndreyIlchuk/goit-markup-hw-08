@@ -1,5 +1,6 @@
 .peculiarities {
   @include respond-to(mobile) {
+    min-width: 480px;
     padding-top: 60px;
   }
   @include respond-to(desktop) {
