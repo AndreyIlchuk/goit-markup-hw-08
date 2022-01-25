@@ -5,10 +5,11 @@
     position: relative;
   }
   @include respond-to(tablet) {
+    min-height: 80px;
     min-width: 768px;
     display: flex;
     flex-wrap: wrap;
-    padding: 22px 0;
+    padding: 21px 0;
   }
   @include respond-to(desktop) {
     width: 100%;

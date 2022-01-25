@@ -13,6 +13,8 @@
     padding-left: 15px;
     padding-right: 15px;
     box-sizing: border-box;
+    display: flex;
+    align-items: center;
   }
   @include respond-to(desktop) {
     width: 1200px;

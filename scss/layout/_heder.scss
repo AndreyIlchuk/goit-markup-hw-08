@@ -3,6 +3,7 @@
     display: flex;
   }
   @include respond-to(tablet) {
+    align-items: center;
     justify-content: center;
   }
   @include respond-to(desktop) {
@@ -61,7 +62,9 @@
     }
   }
 }
-
+.header__top-line {
+  align-items: center;
+}
 .menu-button {
   @include respond-to(mobile) {
     position: absolute;
@@ -132,6 +135,9 @@
     height: 100vh;
   }
   @include respond-to(tablet) {
+    align-items: center;
+    flex-direction: row;
+    height: 0vh;
     display: flex;
     padding: 0px 0px;
     min-height: 0;
