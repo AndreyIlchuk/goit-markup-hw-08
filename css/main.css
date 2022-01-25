@@ -543,7 +543,7 @@ a {
 
 @media screen and (min-width: 319px) {
   .hiro {
-    width: 100%;
+    min-width: 480px;
     background: rgba(47, 48, 58, 0.4);
     padding: 118px 0;
     background-position: center;
@@ -613,6 +613,7 @@ a {
 
 @media screen and (min-width: 319px) {
   .our-team {
+    min-width: 480px;
     text-align: center;
     padding-top: 94px;
     padding-bottom: 94px;
@@ -622,15 +623,35 @@ a {
 
 @media screen and (min-width: 767px) {
   .our-team {
+    width: 100%;
     padding: 60px 0;
   }
 }
 
 @media screen and (min-width: 1280px) {
   .our-team {
+    width: 100%;
     text-align: center;
     padding-top: 94px;
     background: #f5f4fa;
+  }
+}
+
+@media screen and (min-width: 319px) {
+  .regular-customers {
+    width: 100%;
+    margin: 0 auto;
+    text-align: center;
+    padding-bottom: 60px;
+  }
+}
+
+@media screen and (min-width: 767px) {
+  .regular-customers {
+    width: 100%;
+    margin: 0 auto;
+    text-align: center;
+    padding-bottom: 60px;
   }
 }
 
@@ -645,6 +666,16 @@ a {
 
 @media screen and (min-width: 319px) {
   .footer-title {
+    min-width: 480px;
+    margin: 0 auto;
+    padding: 60px 0;
+    background-color: #2f303a;
+  }
+}
+
+@media screen and (min-width: 767px) {
+  .footer-title {
+    margin: 0 auto;
     width: 100%;
     padding: 60px 0;
     background-color: #2f303a;
@@ -653,6 +684,7 @@ a {
 
 @media screen and (min-width: 1280px) {
   .footer-title {
+    margin: 0 auto;
     width: 100%;
     padding: 60px 0;
     background-color: #2f303a;
@@ -1461,6 +1493,7 @@ a {
 
 @media screen and (min-width: 319px) {
   .title-container {
+    width: 480px;
     margin: 0 auto;
     text-align: center;
     padding: 0 15px;
@@ -1469,6 +1502,7 @@ a {
 
 @media screen and (min-width: 767px) {
   .title-container {
+    width: 768px;
     text-align: center;
     margin: 0 auto;
     padding: 0 15px;
@@ -1477,6 +1511,7 @@ a {
 
 @media screen and (min-width: 1280px) {
   .title-container {
+    width: 1200px;
     text-align: center;
     margin: 0 auto;
     padding: 0 15px;
@@ -2172,6 +2207,7 @@ a {
 
 @media screen and (min-width: 319px) {
   .footer-container {
+    width: 100%;
     display: -webkit-box;
     display: -webkit-flex;
     display: -ms-flexbox;
@@ -2209,10 +2245,7 @@ a {
 
 @media screen and (min-width: 767px) {
   .footer-container {
-    -webkit-box-pack: center;
-    -webkit-justify-content: center;
-        -ms-flex-pack: center;
-            justify-content: center;
+    width: 100%;
     margin: 0 auto;
     padding: 0 15px;
     display: -webkit-box;

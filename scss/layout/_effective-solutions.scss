@@ -1,15 +1,18 @@
 .title-container {
   @include respond-to(mobile) {
+    width: 480px;
     margin: 0 auto;
     text-align: center;
     padding: 0 15px;
   }
   @include respond-to(tablet) {
+    width: 768px;
     text-align: center;
     margin: 0 auto;
     padding: 0 15px;
   }
   @include respond-to(desktop) {
+    width: 1200px;
     text-align: center;
     margin: 0 auto;
     padding: 0 15px;

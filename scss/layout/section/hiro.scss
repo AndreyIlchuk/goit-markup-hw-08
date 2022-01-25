@@ -1,6 +1,6 @@
 .hiro {
   @include respond-to(mobile) {
-    width: 100%;
+    min-width: 480px;
     background: rgba(47, 48, 58, 0.4);
     padding: 118px 0;
     background-position: center;

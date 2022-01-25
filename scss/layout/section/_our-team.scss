@@ -1,14 +1,17 @@
 .our-team {
   @include respond-to(mobile) {
+    min-width: 480px;
     text-align: center;
     padding-top: 94px;
     padding-bottom: 94px;
     background: #f5f4fa;
   }
   @include respond-to(tablet) {
+    width: 100%;
     padding: 60px 0;
   }
   @include respond-to(desktop) {
+    width: 100%;
     text-align: center;
     padding-top: 94px;
     background: #f5f4fa;
