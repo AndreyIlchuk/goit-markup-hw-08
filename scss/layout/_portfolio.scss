@@ -116,13 +116,11 @@
   @include respond-to(mobile) {
   }
   @include respond-to(tablet) {
-    justify-content: center;
     display: flex;
     flex-wrap: wrap;
   }
   @include respond-to(desktop) {
     display: flex;
-    justify-content: center;
     flex-wrap: wrap;
   }
 }
