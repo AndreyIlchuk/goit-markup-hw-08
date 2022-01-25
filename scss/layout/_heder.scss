@@ -65,7 +65,6 @@
 .menu-button {
   @include respond-to(mobile) {
     position: absolute;
-    top: 22px;
     right: 22px;
     align-items: center;
     display: inline-flex;
@@ -110,12 +109,12 @@
       position: absolute;
       display: block;
       width: 100%;
-      height: 100vh;
       left: 0;
       background: #fff;
     }
   }
   @include respond-to(tablet) {
+    display: none;
     display: flex;
   }
   @include respond-to(desktop) {
@@ -126,9 +125,11 @@
 }
 .menu-link {
   @include respond-to(mobile) {
-    flex: 1 1 480px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
     padding: 22px 0 47px 40px;
-    min-height: 768px;
+    height: 100vh;
   }
   @include respond-to(tablet) {
     display: flex;
@@ -393,7 +394,6 @@
 }
 .tel {
   @include respond-to(mobile) {
-    padding: 302px 0px 0px 0px;
   }
   @include respond-to(tablet) {
     padding-left: 0;
@@ -489,10 +489,10 @@
     display: none;
   }
   .menu-container.is-open {
+    height: 796px;
     width: 100%;
     position: fixed;
     display: block;
-    height: 100vh;
     top: 0;
     left: 0;
     background: #fff;
@@ -511,7 +511,6 @@
 }
 .burger-box {
   @include respond-to(mobile) {
-    padding-top: 64px;
   }
   @include respond-to(tablet) {
     padding-top: 0;

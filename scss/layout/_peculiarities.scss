@@ -25,7 +25,11 @@
   }
 }
 .feature {
+  @include respond-to(mobile) {
+    margin-bottom: 30px;
+  }
   @include respond-to(tablet) {
+    margin-bottom: 0;
     width: 354px;
   }
 }

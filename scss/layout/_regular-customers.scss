@@ -34,7 +34,7 @@
 }
 .client {
   @include respond-to(mobile) {
-    margin-bottom: 15px;
+    margin-bottom: 30px;
     &:nth-child(1) {
       margin-right: 30px;
     }

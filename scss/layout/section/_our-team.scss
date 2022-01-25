@@ -2,8 +2,8 @@
   @include respond-to(mobile) {
     min-width: 480px;
     text-align: center;
-    padding-top: 94px;
-    padding-bottom: 94px;
+    padding-top: 60px;
+    padding-bottom: 30px;
     background: #f5f4fa;
   }
   @include respond-to(tablet) {

@@ -1,6 +1,8 @@
 .footer-container {
   @include respond-to(mobile) {
-    width: 100%;
+    margin: 0 auto;
+    padding: 0 15px;
+    width: 480px;
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
@@ -15,7 +17,7 @@
     align-items: center;
   }
   @include respond-to(tablet) {
-    width: 100%;
+    width: 768px;
     margin: 0 auto;
     padding: 0 15px;
     display: flex;
