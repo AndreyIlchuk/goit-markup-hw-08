@@ -8,6 +8,13 @@
 }
 .portfolio-container {
   @include respond-to(mobile) {
+    width: 480px;
+    margin: 0 auto;
+    padding-left: 15px;
+    padding-right: 15px;
+  }
+  @include respond-to(tablet) {
+    width: 768px;
     margin: 0 auto;
     padding-left: 15px;
     padding-right: 15px;

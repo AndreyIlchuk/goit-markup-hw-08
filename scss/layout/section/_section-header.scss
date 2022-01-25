@@ -6,7 +6,6 @@
   @include respond-to(tablet) {
     display: flex;
     flex-wrap: wrap;
-    justify-content: center;
     padding: 22px 0;
   }
   @include respond-to(desktop) {

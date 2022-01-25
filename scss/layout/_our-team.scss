@@ -23,7 +23,6 @@
 
 .team {
   @include respond-to(tablet) {
-    justify-content: center;
     display: flex;
     flex-wrap: wrap;
   }
